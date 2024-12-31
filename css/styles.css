@@ -1,0 +1,596 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #fdf8ec;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  color: #6b5b3e;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #7d6a47;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f3e8d7;
+  padding: 2rem 0;
+}
+
+.cozy-banner {
+  height: 200px;
+  background: url('cozy theme') no-repeat center/cover;
+}
+
+/* Home Personal Section */
+.personal {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.personal h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6b5b3e;
+}
+
+.personal-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.personal-item img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #f3e8d7;
+  color: #6b5b3e;
+}
+
+/* Wave header home background */
+.header {
+    position: relative;
+    background-color: #f8e8dc;
+    height: 150px;
+    clip-path: ellipse(80% 50% at 50% 0%);
+}
+
+/* About section styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* Image container with arch */
+.image-container {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 50% 50% 0 0; /* Creates the arch effect */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+/* Text section */
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* ID Card Section */
+.id-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fef3f9; /* Optional: Add a different background for this section */
+}
+
+.id-card {
+  width: 350px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.id-card .profile-pic img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #bd255f;
+  margin-bottom: 15px;
+}
+
+.id-card .card-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #bd255f;
+  margin-bottom: 15px;
+}
+
+.id-card .info {
+  text-align: left;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.id-card .info p {
+  margin: 5px 0;
+}
+
+.id-card .contact {
+  font-size: 14px;
+  background-color: #ffeffa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.id-card .contact p {
+  margin: 5px 0;
+}
+
+.id-card .footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6c6c6c;
+  font-style: italic;
+}
+
+/* Table Section */
+table, td, tr, th 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+td 
+{
+    text-align:center;
+    background-color: darksalmon;
+}
+
+/* Album Section */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8ede6;
+  color: #6b5b4d;
+}
+
+.header p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.header button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #6b5b4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #a48b7d;
+}
+
+.album {
+  text-align: center;
+  padding: 50px;
+}
+
+.album h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.album-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; 
+}
+
+.album-item {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.album-item:hover {
+  transform: scale(1.05);
+}
+
+.album-item img {
+  width: 100%;
+  height: auto;
+}
+
+.album-item .details {
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* Personalities Section */
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-sizing: 30px;
+  margin: 40px; 
+  padding: 7px; 
+  border-radius: 30px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  ; 
+  }
+
+  .left-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 2;
+  box-sizing: 60px;
+  margin: 40px
+  }
+
+  .right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 40px
+  }
+
+  .container {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .container h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  }
+
+  .container p {
+  font-size: 14px;
+  color: #666;
+  }
+
+  .pie-chart {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: conic-gradient(
+  #FFD5C2 0% 15%,         /* Emphatic */
+  #FFEE93 15% 35%,        /* Loving */
+  #D5E6A3 35% 50%,        /* Outgoing */
+  #F6BDC0 50% 70%,        /* Loyalty */
+  #A2DBFA 70% 80%,        /* Introverted */
+  #E4C1F9 80% 90%,        /* Adaptable */
+  #FFABAB 90% 100%        /* Observant */
+  );
+  }
+
+  .slice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(50% at 50% 50%);
+  text-align: absolute;
+  }
+
+  .pie-chart::before {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+
+/* Favourite Food Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fef3f9, #ffffff);
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fef3f9;
+  color: #333;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+header p {
+  font-size: 1em;
+  color: #666;
+}
+.btn {
+  display: inline-block;
+  background-color: #d68b45;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+.top-list {
+  text-align: center;
+  margin-top: 30px;
+}
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px;
+}
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+.menu-item h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+.menu-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+.menu-item .rate {
+  font-weight: bold;
+  color: #d68b45;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+footer {
+  text-align: center;
+  background-color: #fef3f9;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Contact Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+h4 {
+  color: gray;
+  margin: 10px 0;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tool {
+  text-align: center;
+  width: 120px;
+}
+
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 10px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+  color: gray;
+}
+
+/* Mail Me Body Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffe4ec;
+  text-align: center;
+}
+
+/* Inquiry Box Styling */
+.inquiry-box {
+  display: inline-block;
+  background: linear-gradient(to bottom right, #ffffff, #fce4ec);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 300px;
+}
+
+/* Message Styling */
+.message {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mail Button Styling */
+.mail-button {
+  display: inline-block;
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b167e;
+  border: 2px solid #0b167e;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.mail-button:hover {
+  background-color: #c04f74;
+  color: #fff;
+}
+
+/* Links Container */
+.links {
+  margin-top: 10px;
+}
+
+/* Individual Links */
+.link {
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.link.google {
+  color: #4285F4;
+}
+
+.link.google:hover {
+  text-decoration: underline;
+}
+
+.link.gmail {
+  color: #DB4437;
+}
+
+.link.gmail:hover {
+  text-decoration: underline;
+}
+
