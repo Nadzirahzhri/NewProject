@@ -10,9 +10,12 @@
     <header>
         <nav>
           <ul>
-            <li><a href="index.html" target="main">Home</a></li>
-            <li><a href="biocard.html" target="main">Personal</a></li>
-            <li><a href="contact.html" target="main">Contact</a></li>
+            <li><a href="index.html" target="main" tabindex="1">Home</a></li>
+            <li><a href="biodata.html" target="main" tabindex="2">About</a></li>
+            <li><a href="personality.html" target="main" tabindex="3">Personality</a></li>
+            <li><a href="education.html" target="main" tabindex="4">Education</a></li>
+            <li><a href="album.html" target="main" tabindex="5">Album</a></li>
+            <li><a href="contact.html" target="main" tabindex="6">Contact</a></li>
           </ul>
         </nav>
     <h1>Burnt Cheesecake Recipe</h1>
@@ -22,7 +25,7 @@
 
     <div align="center">
     <h4>Burnt Cheesecake Video</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UoAFD-IpRC4?si=sC8i3yPayMCcG6mH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" tabindex="7" src="https://www.youtube.com/embed/UoAFD-IpRC4?si=sC8i3yPayMCcG6mH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <br> 
@@ -57,8 +60,23 @@
 
     <br clear="all">
 
+    <div align="center">
+    <a href="#top" tabindex="8">Back To Top</a>
+    </div>
+
             <footer>
                 <p>&copy; 2024 The Slice of Nad. All rights reserved.</p>
               </footer>
+
+              <br>
+  
+              <div class="date-time" id="dateTime">
+              <footer> <script>
+                  // Set the last modified date dynamically
+                  const lastModified = new Date(document.lastModified);
+                  document.getElementById('dateTime').textContent = 
+                  `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}
+            `;
+                </script></footer></div>
     </body>
 </html>

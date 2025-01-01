@@ -9,10 +9,12 @@
 <header>
     <nav>
       <ul>
-        <li><a href="index.html" target="main">Home</a></li>
-        <li><a href="biocard.html" target="main">Personal</a></li>
-        <li><a href="album.html" target="main">Album</a></li>
-        <li><a href="contact.html" target="main">Contact</a></li>
+        <li><a href="index.html" target="main" tabindex="1">Home</a></li>
+        <li><a href="biodata.html" target="main" tabindex="2">About</a></li>
+        <li><a href="personality.html" target="main" tabindex="3">Personality</a></li>
+        <li><a href="education.html" target="main" tabindex="4">Education</a></li>
+        <li><a href="album.html" target="main" tabindex="5">Album</a></li>
+        <li><a href="contact.html" target="main" tabindex="6">Contact</a></li>
       </ul>
     </nav>
 </header>
@@ -108,9 +110,27 @@
         </div>
     </section>
     <br clear="all">
+
+    <br clear="all">
+
+<div align="center">
+<a href="#top" tabindex="7">Back To Top</a>
+</div>
+
     <footer>
       <p>&copy; 2024 The Slice of Nad. All rights reserved.</p>
     </footer>
+
+    <br>
+  
+    <div class="date-time" id="dateTime">
+    <footer> <script>
+        // Set the last modified date dynamically
+        const lastModified = new Date(document.lastModified);
+        document.getElementById('dateTime').textContent = 
+        `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}
+  `;
+      </script></footer></div>
     
 </body>
 </html>

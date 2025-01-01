@@ -7,10 +7,12 @@
             <header>
                 <nav>
                   <ul>
-                    <li><a href="index.html" target="main">Home</a></li>
-                    <li><a href="biocard.html" target="main">Personal</a></li>
-                    <li><a href="album.html" target="main">Album</a></li>
-                    <li><a href="contact.html" target="main">Contact</a></li>
+                    <li><a href="index.html" target="main" tabindex="1">Home</a></li>
+                    <li><a href="biodata.html" target="main" tabindex="2">About</a></li>
+                    <li><a href="personality.html" target="main" tabindex="3">Personality</a></li>
+                    <li><a href="education.html" target="main" tabindex="4">Education</a></li>
+                    <li><a href="album.html" target="main" tabindex="5">Album</a></li>
+                    <li><a href="contact.html" target="main" tabindex="6">Contact</a></li>
                   </ul>
                 </nav>
             <h1>₊˚⊹♡ A bit about 'My Backbone' ᵕ̈ ₊˚⊹♡</h1>
@@ -20,7 +22,7 @@
             <section class="hero">
               <div align="center" class="cozy-banner"> 
             <a href="images/my cousin with grandparents.JPG">
-            <img src="images/my cousin with grandparents.JPG"
+            <img tabindex="5" src="images/my cousin with grandparents.JPG"
             height="200" border="6" space="10" vspace="10" style="border-color: #90553C; border-style: double;"></div>
     </head>
 
@@ -29,7 +31,7 @@
         <div align="center">
           <div class="container-wrapper">  
             <a href="images/girls peace jpeg.jpeg">
-            <img src="images/girls peace jpeg.jpeg" style="float: left; padding: 16;"  
+            <img tabindex="7" src="images/girls peace jpeg.jpeg" style="float: left; padding: 16;"  
             height="320" space="10" hspace="20">
             </a>
             <h4 style="text-align: justify; padding: 16">
@@ -56,7 +58,7 @@
         </div>
         
         <div align="center">
-            <img src="images/cousie jpeg.jpeg" height="320"
+            <img tabindex="8" src="images/cousie jpeg.jpeg" height="320"
             style="float:right; padding: 16;" space="10"  hspace="10" alt="Cousin">
           <div class="container-wrapper">
             <h4 style="text-align: justify; padding: 16">
@@ -104,11 +106,22 @@
         </div>
 
             <div align="center">
-            <a href="#top">Back To Top</a></div>
+            <a tabindex="9" href="#top">Back To Top</a></div>
 
             <br clear="all">
     <footer>
       <p>&copy; 2024 The Slice of Nad. All rights reserved.</p>
     </footer>
+
+    <br>
+  
+    <div class="date-time" id="dateTime">
+    <footer> <script>
+        // Set the last modified date dynamically
+        const lastModified = new Date(document.lastModified);
+        document.getElementById('dateTime').textContent = 
+        `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}
+  `;
+      </script></footer></div>
     </body> 
 </html>

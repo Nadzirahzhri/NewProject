@@ -11,9 +11,11 @@
         <header>
             <nav>
               <ul>
-                <li><a href="index.html" target="main">Home</a></li>
-                <li><a href="biocard.html" target="main">Personal</a></li>
-                <li><a href="album.html" target="main">Album</a></li>
+                <li><a href="index.html" target="main" tabindex="1">Home</a></li>
+                <li><a href="biodata.html" target="main" tabindex="2">About</a></li>
+                <li><a href="personality.html" target="main" tabindex="3">Personality</a></li>
+                <li><a href="education.html" target="main" tabindex="4">Education</a></li>
+                <li><a href="album.html" target="main" tabindex="5">Album</a></li>
               </ul>
             </nav>
         <h1>Contact</h1>
@@ -39,7 +41,7 @@
               <div class="tool">
                   <div class="icon">
                     <a href="https://www.instagram.com/nadzirahzhri?igsh=MXZ6djd5ODdlbjE2Yw%3D%3D&utm_source=qr">
-                    <img src="images/Instagram icon.jpg" alt="Instagram"></a>
+                    <img tabindex="6" src="images/Instagram icon.jpg" alt="Instagram"></a>
                   </div>
                   <p class="name">Instagram</p>
               </div>
@@ -48,7 +50,7 @@
               <div class="tool">
                   <div class="icon">
                     <a href="https://www.tiktok.com/@hotm0cha?_t=8sX2jHCG5El&_r=1">
-                    <img src="images/TikTok icon.jpg" alt="TikTok"></a>
+                    <img tabindex="7" src="images/TikTok icon.jpg" alt="TikTok"></a>
                   </div>
                   <p class="name">TikTok</p>
               </div>
@@ -57,7 +59,7 @@
               <div class="tool">
                   <div class="icon">
                     <a href="https://x.com/littlemoch4?s=21">
-                    <img src="images/X icon.png" alt="X"></a>
+                    <img tabindex="8" src="images/X icon.png" alt="X"></a>
                   </div>
                   <p class="name">X</p>
               </div>
@@ -66,7 +68,7 @@
               <div class="tool">
                 <div class="icon">
                   <a href="https://locket.camera/links/ip4EDcYDqMCcQpueA">
-                  <img src="images/Locket icon.jpg" alt="Locket"></a>
+                  <img tabindex="9" src="images/Locket icon.jpg" alt="Locket"></a>
                 </div>
                 <p class="name">Locket</p>
             </div>
@@ -75,7 +77,7 @@
               <div class="tool">
                   <div class="icon">
                     <a href="tel:0194567890">
-                    <img src="images/Phone Icon.jpg" alt="Locket"></a>
+                    <img tabindex="10" src="images/Phone Icon.jpg" alt="Locket"></a>
                   </div>
                   <p class="name">Phone</p>
               </div>
@@ -84,7 +86,7 @@
               <div class="tool">
                   <div class="icon">
                     <a href="mailto:2022665156@student.uitm.edu.my">
-                    <img src="images/Email icon.jpg" alt="Email">
+                    <img tabindex="11" src="images/Email icon.jpg" alt="Email">
                   </div>
                   <p class="name">Email</p>
               </div>
@@ -96,18 +98,35 @@
  <div class="inquiry-box">
    <!--Email to more than 1 email with body-->
   <p class="message" style="font-family: Arial, Helvetica, sans-serif; color:blue;">Got Any Question? Mail me!</p>
-  <a href="mailto:nurnnadzirah06@gmail.com" class="mail-button">Direct Mail</a>
+  <a tabindex="12" href="mailto:nurnnadzirah06@gmail.com" class="mail-button">Direct Mail</a>
   <div class="links">
-      <a href="https://www.google.com" class="link google">Google</a>
-      <a href="https://mail.google.com" class="link gmail">Gmail</a>
+      <a tabindex="13" href="https://www.google.com" class="link google">Google</a>
+      <a tabindex="14" href="https://mail.google.com" class="link gmail">Gmail</a>
   </div>
  </div>
+</div>
+
+<br clear="all">
+
+<div align="center">
+<a href="#top" tabindex="15">Back To Top</a>
 </div>
 
         <br clear="all">
         <footer>
           <p>&copy; 2024 The Slice of Nad. All rights reserved.</p>
         </footer>
+
+        <br>
+  
+        <div class="date-time" id="dateTime">
+        <footer> <script>
+            // Set the last modified date dynamically
+            const lastModified = new Date(document.lastModified);
+            document.getElementById('dateTime').textContent = 
+            `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}
+      `;
+          </script></footer></div>
 
     </body>
 </html>

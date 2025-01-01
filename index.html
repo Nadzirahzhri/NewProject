@@ -10,10 +10,12 @@
     <header>
         <nav>
           <ul>
-            <li><a href="index.html" target="main">Home</a></li>
-            <li><a href="biocard.html" target="main">Personal</a></li>
-            <li><a href="album.html" target="main">Album</a></li>
-            <li><a href="contact.html" target="main">Contact</a></li>
+            <li><a href="index.html" target="main" tabindex="1">Home</a></li>
+            <li><a href="biodata.html" target="main" tabindex="2">About</a></li>
+            <li><a href="personality.html" target="main" tabindex="3">Personality</a></li>
+            <li><a href="education.html" target="main" tabindex="4">Education</a></li>
+            <li><a href="album.html" target="main" tabindex="5">Album</a></li>
+            <li><a href="contact.html" target="main" tabindex="6">Contact</a></li>
           </ul>
         </nav>
     <h1>The Slice Of Nad</h1>
@@ -43,56 +45,26 @@
 
       <div class="personal-grid">
        <!--Using image as hyperlink,global link-->
-        <div align="center" class="personal-item"><a href="biocard.html"><img src="images/biocard.jpg" height="200" width="100" border="5" alt="Biodata illustration"></a>
-            <p>
-                <button  onclick="document, location = 
-                'biocard.html'" target="main">Biocard</button></p></div>
-        
-        <div align="center" class="personal-item"><a href="personalities.html"><img src="images/myself.jpeg" height="200" width="100" border="5" alt="Personalities illustration"></a>
+
+        <div align="center" class="personal-item"tabindex="7"><a href="family.html"><img src="images/family.jpg" height="200" width="100" border="5" alt="Family illustration"></a>
           <p>
               <button  onclick="document, location = 
-              'personalities.html'" target="main">Personalities</button></p></div>
-
-        <div align="center" class="personal-item"><a href="education.html"><img src="images/Academic.jpg" height="200" width="100" border="5" alt="Academic illustration"></a>
-          <p>
-              <button onclick="document, location = 
-              'education.html'" target="main">Education</button></p></div>
-
-        <div align="center" class="personal-item"><a href="family.html"><img src="images/family.jpg" height="200" width="100" border="5" alt="Family illustration"></a>
-          <p>
-              <button  onclick="document, location = 
-              'family.html'" target="main">Family</button></p></div>
-
-        <div align="center" class="personal-item"><a href="album.html"><img src="images/Album.jpeg" height="200" width="100" border="5" alt="Album illustration"></a>
-          <p>
-              <button onclick="document, location = 
-              'album.html'" target="main">Album</button></p></div>
-        
-      </div>
-
-      <br> 
-
-      <div class="personal-grid">
+              'family.html'" target="main" >Family</button></p></div>
           
-        <div align="center" class="personal-item"><a href="hobby.html"><img src="images/hobby.jpg" height="200" width="100" border="5" alt="Personalities illustration"></a>
+        <div align="center" class="personal-item" tabindex="8"><a href="hobby.html"><img src="images/hobby.jpg" height="200" width="100" border="5" alt="Personalities illustration"></a>
           <p>
             <button onclick="document, location = 
-              'hobby.html'" target="main">Hobby</button></p></div>
+              'hobby.html'" target="main" >Hobby</button></p></div>
         
-        <div align="center" class="personal-item"><a href="favfood.html"><img src="images/favourite food.jpg" height="200" width="100" border="5" alt="Favourite Food  illustration"></a>
+        <div align="center" class="personal-item"tabindex="9"><a href="favfood.html"><img src="images/favourite food.jpg" height="200" width="100" border="5" alt="Favourite Food  illustration"></a>
           <p>
               <button onclick="document, location = 
-              'favfood.html'" target="main">Favfood</button></p></div>
+              'favfood.html'" target="main" >Favfood</button></p></div>
 
-        <div align="center" class="personal-item"><a href="recipe.html"><img src="images/burnt cheesecake.jpg" height="200" width="100" border="5" alt="Cake illustration"></a>
+        <div align="center" class="personal-item"tabindex="10"><a href="map.html"><img src="images/locations.jpg" height="200" width="100" border="5" alt="Map illustration"></a>
           <p>
               <button  onclick="document, location = 
-              'recipe.html'" target="main">Recipe</button></p></div>
-
-        <div align="center" class="personal-item"><a href="map.html"><img src="images/locations.jpg" height="200" width="100" border="5" alt="Map illustration"></a>
-          <p>
-              <button  onclick="document, location = 
-              'map.html'" target="main">Map</button></p></div>
+              'map.html'" target="main" >Map</button></p></div>
               </div>
 
     <br clear="all">
@@ -130,11 +102,26 @@
 
     <br clear="all">
 
+            <div align="center">
+            <a href="#top" tabindex="11">Back To Top</a>
+            </div>
+
+    <br clear="all">
+
     </section>
   </main>
   <footer>
     <p>&copy; 2024 The Slice of Nad. All rights reserved.</p>
   </footer>
+  <div class="date-time" id="dateTime">
+  <footer> <script>
+      // Set the last modified date dynamically
+      const lastModified = new Date(document.lastModified);
+      document.getElementById('dateTime').textContent = 
+      `Last Updated: ${lastModified.toLocaleDateString()} ${lastModified.toLocaleTimeString()}
+`;
+    </script></footer></div>
+    
 </body>
 </html>
 
